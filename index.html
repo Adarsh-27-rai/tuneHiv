@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tuneHiv</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="icon" href="coverPath/default_music_icon.jpg" type="image/png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Signika:wght@300..700&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <div class="nav-bar">
+        <div class="logo">
+            <i class="fa-solid fa-headset"></i>
+            <span>tuneHiv</span>
+        </div>
+        <div class="search">
+            <input type="text" name="Search" id="mySearch" placeholder="what would you like to play" />
+            <div class="searchResults">
+                <!-- <div class="results">
+                    <div class="resultImg"><img src="coverPath/default_music_icon.jpg" alt="Default"></div>
+                    <div class="resultInfoName">
+                        <p class="resultSongName">G.O.A.T.</p>
+                        <p class="resultArtistName">Diljeet Dosanjh-G.O.A.T.</p>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <div class="user-info">
+            <button id="sign_up">sign in</button>
+            <button id="log_in">log in</button>
+        </div>
+    </div>
+
+    <div class="main_container">
+        <div class="songPlayer">
+            <div class="yourPlaylist">
+                <div class="list">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                    <p>Your Songs</p>
+                </div>
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="playSong">
+                <div class="playSongImg"><img src="coverPath/default_music_icon.jpg" id="songImg" alt="Default_Icon">
+                </div>
+                <div class="songPlayinfo">
+                    <img src="coverPath/default_music_icon.jpg" id="songImage" alt="Default_Icon">
+                    <div class="info">
+                        <!-- <img src="coverPath/default_music_icon.jpg" id="songImg" alt="Default_Icon"> -->
+                        <div class="name">_ _ _</div>
+                        <div class="artist">_ _ _</div>
+                    </div>
+                    <div class="songTime">
+                        00:00 / 00:00
+                    </div>
+                </div>
+                <div class="followOn">
+                    <i class="fa-solid fa-backward" id="backward"></i>
+                    <i class="fa-solid fa-circle-play" id="play"></i>
+                    <i class="fa-solid fa-forward" id="foreward"></i>
+                </div>
+                <div class="seekBar">
+                    <div class="path"></div>
+                    <div class="bulb"></div>
+                </div>
+            </div>
+        </div>
+        <div class="songs">
+            <p class="head">Popular songs and playlists</p>
+            <div class="songContainer">
+                <!-- <div class="songBanner">
+                    <div class="songImg"><img src="coverPath/default_music_icon.jpg" alt="Default"></div>
+                    <div class="songInfo">
+                        <p class="songName">G.O.A.T.</p>
+                        <p class="artistName">Diljeet Dosanjh</p>
+                    </div>
+                    <i class="fa-solid fa-play"></i>
+                </div>                    
+                -->
+            </div>
+            <p class="head">All Popular songs</p>
+            <div class="AllSongs">
+                <!-- <div class="IndividualSongs">
+                    <div class="IndividualSongImg"><img src="coverPath/default_music_icon.jpg" alt="Default"></div>
+                    <div class="IndividualSongInfo">
+                        <p class="songName">White Brown Black</p>
+                        <p class="artistName">Diljeet Dosanjh</p>
+                    </div>
+                    <i class="fa-solid fa-play"></i>
+                </div> -->
+            </div>
+
+            <div class="footer">
+                <div class="f1">
+                    <p>Company</p>
+                    <ul>
+                        <li>About</li>
+                        <li>Jobs</li>
+                        <li>For the Record</li>
+                    </ul>
+                </div>
+                <div class="f1">
+                    <p>Communities</p>
+                    <ul>
+                        <li>For Artists</li>
+                        <li>Developers</li>
+                        <li>Advertising</li>
+                        <li>Investors</li>
+                        <li>Vendors</li>
+                    </ul>
+                </div>
+                <div class="f1">
+                    <p>Useful links</p>
+                    <ul>
+                        <li>Support</li>
+                        <li>Free Mobile App</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="playLists">
+            <div class="playListInfo">
+                <div id="PlayListName">
+                    <div class="playListImg">
+                        <img src="coverPath/default_music_icon.jpg" alt="Default">
+                    </div>
+                    <div class="songList">
+                        <h2>G.O.A.T.</h2>
+                        <p>Diljeet</p>
+                    </div>
+                    <!-- <div class="backToMain">
+                    <i class="fa-solid fa-left-long" id="back"></i>
+                    <span id="Go-back">Go Back</span>
+                </div> -->
+                </div>
+                <div class="backToMain">
+                    <i class="fa-solid fa-left-long" id="back"></i>
+                    <span id="Go-back">Go Back</span>
+                </div>
+            </div>
+            <div class="playListSongs">
+                <!-- <div class="member">
+                <div class="memberInfo">
+                    <div class="memberImg"><img src="coverPath/default_music_icon.jpg" alt="Default"></div>
+                    <div class="memberInfoName">
+                        <p class="memberSongName">G.O.A.T.</p>
+                        <p class="memberName">Diljeet Dosanjh-G.O.A.T.</p>
+                    </div>
+                </div>
+                <i class="fa-regular fa-circle-play" id="play"></i>
+            </div>                 
+             -->
+            </div>
+        </div>
+    </div>
+    <script src="file.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
